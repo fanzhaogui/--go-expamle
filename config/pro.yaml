@@ -1,0 +1,22 @@
+#启动端口
+server:
+  port: 8008
+  pid-file: /tmp/act.service.pid
+  shutdown-timeout: 5 #second
+  api-key: actservice7shangzuo20180906fordev
+
+mysql:
+  #[username[:password]@][protocol[(address)]]/dbname[?param1=value1&...&paramN=valueN]
+  dsn: root:123456@tcp(127.0.0.1:3306)/dbname?charset=utf8mb4&parseTime=True
+
+redis:
+  addr: 127.0.0.1:6379
+  password:
+  db: 0
+
+log:
+  file-name: /home/log/api.service/system.log
+  max-size: 1 #MB 自动切割
+  max-backups: 10 #max-backups 和 max-age 都为0 log不删除
+  max-age: 7 #days
+

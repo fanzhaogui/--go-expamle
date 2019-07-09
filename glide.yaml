@@ -1,0 +1,23 @@
+package: vendor.api.7shangzuo.com
+ignore:
+- google.golang.org/appengine/internal
+import:
+- package: github.com/gin-gonic/gin
+  version: ~1.2.0
+
+- package: github.com/spf13/viper
+  version: ^1.0.0
+
+- package: go.uber.org/zap
+  version: ^1.7.1
+
+- package: gopkg.in/natefinch/lumberjack.v2
+
+- package: github.com/go-redis/redis
+  version: ~6.9.0
+
+- package: github.com/jinzhu/gorm
+  version: ~1.0.0
+
+- package: github.com/aliyun/aliyun-oss-go-sdk
+  version: ~1.8.0
